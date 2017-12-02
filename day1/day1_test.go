@@ -1,4 +1,4 @@
-package main
+package day1
 
 import "testing"
 
@@ -25,8 +25,8 @@ func TestSumIfSameNum(t *testing.T) {
 	expect(t, SumIfSameNum(nums, len(nums)/2), 4)
 }
 
-func expect(t *testing.T, expected int, actual int) {
+func expect(t *testing.T, actual int, expected int) {
 	if expected != actual {
-		t.Errorf("Sum was incorrect, got: %d, want: %d.", expected, actual)
+		t.Errorf("Sum was incorrect, got: %d, want: %d.", actual, expected)
 	}
 }
