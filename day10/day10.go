@@ -49,16 +49,6 @@ func main() {
 		hashRing = append(hashRing, byte(xorVal))
 	}
 	fmt.Println(hex.EncodeToString(hashRing))
-
-	//for skipSize, str := range strings.Split(scanner.Text(),",") {
-	//	num, _ := strconv.Atoi(str)
-	//	if num > 1 {
-	//		reverse(ring, currPos, (currPos+num-1)%len(ring))
-	//	}
-	//	currPos = (currPos + skipSize + num) % len(ring)
-	//	fmt.Println(ring, currPos)
-	//}
-	//fmt.Printf("First two multiplied: %d\n", ring[0] * ring[1])
 }
 
 func partOne(ring []int) {
